@@ -77,6 +77,11 @@ h2:after {
   margin-top: 30px;
 }
 
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
 /*--------Paragraphs-------*/
 .long-copy {
   line-height: 145%;
@@ -84,9 +89,20 @@ h2:after {
   margin-left: 15%;
 }
 
-/*-----------------------------------*/
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*--------Icons-------*/
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
 /*--------Buttons-------*/
-/*-----------------------------------*/
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -167,4 +183,50 @@ h2:after {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/*-----------------------------------*/
+/*--------Features-------*/
+/*-----------------------------------*/
+
+.section-feature .long-copy {
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------*/
+/*--------Meals-------*/
+/*-----------------------------------*/
+
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
